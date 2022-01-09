@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursion</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Factorial of a Number by using Recursion</h1>
+
+    <input type="text" name="inp" id="inp">
+     <button id="btn">SUBMIT</button>
+    <p>click to get output👇</p>
+     <p id='output'></p>
+    <script>
+            function fact(n){
+                    if(n==0 || n==1){
+                        return 1;
+
+                    }
+
+                    return fact(n-1)*n;
+                }
+
+                let f=fact(5);
+
+
+                let btn=document.getElementById("btn");
+
+                btn.addEventListener("click",function(){
+
+                    let inp=document.getElementById("inp");
+                    let val=parseInt(inp.value);
+
+                    let op=fact(val);
+
+                    let p=document.getElementById("output");
+                     p.innerText=op;
+                });
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width:100vw;
+    flex-direction:column;
+    background-image:url("https://cdn-images-1.medium.com/max/2400/1*c32BY9v7HqNqmG6InmTM0w.jpeg");
+    background-size:cover;
+}
+h2{
+    font-size:50px;
+}
+button{
+    background-color:rebeccapurple;
+    margin:10px;
+    font-size:20px;
+}
+p{
+    background-color:rosybrown;
+    font-size:50px;
+}
+h1{
+    color:brown;
+    font-size:50px;
+    font-family: sans-serif;
+    background-color:whitesmoke;
+}
